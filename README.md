@@ -34,7 +34,6 @@ bash
 python main.py
 Use code with caution.
 
-Visit http://127.0.0.1:5000 in your browser.
 📁 Project Structure
 main.py: Flask routes and SQLAlchemy models.
 templates/: HTML files (home.html, index.html) containing PyScript logic.
