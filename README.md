@@ -18,7 +18,8 @@ A modern, interactive registration and data management system that replaces trad
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/pals87893-max/Kaun-Banega-Crorepati.git
+   git clone https://github.com
+   cd kbc-flask-app
 Use code with caution.
 
 Install dependencies:
