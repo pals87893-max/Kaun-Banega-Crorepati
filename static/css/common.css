@@ -1,0 +1,17 @@
+body {
+    background-color: #fce18f;
+    /* Ensures the background covers the full height even on long mobile lists */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* Prevents horizontal scroll on small screens */
+    overflow-x: hidden;
+    /* Improves text rendering on high-resolution mobile displays */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Optional: Add a container to keep content from hitting screen edges on mobile */
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}

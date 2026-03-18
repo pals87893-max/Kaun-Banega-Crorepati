@@ -1,0 +1,87 @@
+.table-container {
+    max-height: 450px;
+    overflow-y: auto;
+    border: 1px solid var(--aged-tan);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.table thead th {
+    background-color:rgba(83, 36, 7, 0.81) ;
+    color: var(--ink-well);
+    border: none;
+    position: sticky;
+    top: 0;
+}
+
+.table tbody tr {
+    border-bottom: 1px dotted var(--aged-tan); /* Notebook paper vibe */
+}
+
+.important-row {
+    background-color: rgba(139, 0, 0, 0.1) !important;
+    border-left: 8px solid var(--blood-seal) !important;
+}
+
+/* Custom "Feather Quill" Scrollbar */
+.table-container::-webkit-scrollbar {
+    width: 8px;
+}
+.table-container::-webkit-scrollbar-track {
+    background: var(--parchment);
+}
+.table-container::-webkit-scrollbar-thumb {
+    background: var(--aged-tan);
+    border-radius: 10px;
+    border: 2px solid var(--parchment);
+}
+/* Fix table alignment */
+.table td, .table th {
+    vertical-align: middle;
+    padding: 12px 8px;
+    border-bottom: 1px solid rgba(44, 30, 20, 0.1);
+}
+
+/* Base style for antique buttons */
+.btn-spellbook, .btn-spellbook-danger {
+    font-family: 'Glass Antiqua', cursive;
+    text-decoration: none !important;
+    padding: 4px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--ink-well);
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
+/* Update Button - Ink look */
+.btn-spellbook {
+    color: var(--ink-well) !important;
+    background: transparent;
+}
+
+.btn-spellbook:hover {
+    background: var(--aged-tan);
+    color: #fff !important;
+}
+
+/* Delete Button - Dried blood/Seal look */
+.btn-spellbook-danger {
+    color: #8b0000 !important;
+    border-color: #8b0000;
+    background: transparent;
+}
+
+.btn-spellbook-danger:hover {
+    background: #8b0000;
+    color: #fff !important;
+}
+
+/* Prevent text from wrapping and squishing buttons */
+.text-nowrap {
+    white-space: nowrap;
+}
