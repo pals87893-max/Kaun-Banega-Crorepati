@@ -1,0 +1,85 @@
+/* 1. The Main Bar: Washi Paper Texture */
+.navbar {
+  background-color: #f8f4ed !important; 
+  border-bottom: 3px solid #2c1e14; 
+  padding: 0.8rem 1rem; /* Reduced padding for mobile width */
+  position: relative;
+  z-index: 10;
+}
+
+/* 2. Brand & Links */
+.navbar-brand {
+  font-family: 'serif';
+  font-weight: 900;
+  color: #bc412b !important; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+/* Mobile Link Styling */
+.nav-link {
+  color: #2c1e14 !important; 
+  font-family: 'serif';
+  margin: 5px 0;
+  padding: 10px 15px !important;
+  border-left: 3px solid transparent; /* Hidden by default */
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  background-color: rgba(188, 65, 43, 0.1); 
+  border-left: 3px solid #bc412b; /* Vermilion indicator on mobile */
+  color: #bc412b !important;
+}
+
+/* 3. The Search Bar & Inputs */
+.navbar .form-control {
+  border-radius: 0; 
+  border: 1px solid #2c1e14;
+  background-color: #fff; /* White for better legibility on mobile */
+  margin-bottom: 10px; /* Space between input and button on small screens */
+  font-size: 16px; /* Prevents iOS zoom */
+}
+
+.navbar .btn-dark {
+  border-radius: 0;
+  background-color: #2c1e14;
+  border: none;
+  width: 100%; /* Full width button on mobile */
+  font-family: 'serif';
+}
+
+/* 4. Shoji Screen Effect (Subtle Paper Grain) */
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(#000 0.5px, transparent 0.5px);
+  background-size: 20px 20px;
+  opacity: 0.03; 
+  pointer-events: none;
+}
+
+/* 5. Desktop Specific Adjustments */
+@media (min-width: 992px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  
+  .nav-link {
+    border-left: 1px solid rgba(44, 30, 20, 0.2);
+    margin-left: 15px;
+    padding-left: 15px !important;
+  }
+
+  .navbar .btn-dark {
+    width: auto; /* Return to natural width */
+    margin-bottom: 0;
+  }
+  
+  .navbar .form-control {
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+}
